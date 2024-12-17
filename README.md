@@ -16,6 +16,7 @@ To get started with this project, follow these steps:
 
 ### Prerequisites
 
+* Git
 * java 17 or higher
 * maven 3.8 or higher
 * A PDF file to demo insert the watermark into
