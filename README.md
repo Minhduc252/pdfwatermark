@@ -25,9 +25,9 @@ To get started with this project, follow these steps:
 ### Installation
 
 1. Clone the repository using `git clone https://github.com/Minhduc252/pdfwatermark.git`
-2. Navigate into the project directory using `cd your-repo-name`
+2. Navigate into the project directory using `cd pdfwatermark`
 3. Open xampp and start the server
-4. Open you browser and navigate to `http://localhost:8080/phpmyadmin`
+4. Open you browser and navigate to `http://127.0.0.1/phpmyadmin/`
 5. Import the database using the sql file  `db.sql` to phpmyadmin
 
 ### Usage
