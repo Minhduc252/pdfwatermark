@@ -23,7 +23,7 @@ To get started with this project, follow these steps:
 
 ### Installation
 
-1. Clone the repository using `git clone https://github.com/your-username/your-repo-name.git`
+1. Clone the repository using `git clone https://github.com/Minhduc252/pdfwatermark.git`
 2. Navigate into the project directory using `cd your-repo-name`
 3. Open xampp and start the server
 4. Open you browser and navigate to `http://localhost:8080/phpmyadmin`
