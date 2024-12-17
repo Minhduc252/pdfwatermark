@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: highlightFont;
+    src: url("../font/bigfat_script/Bigfat\ Script.ttf");
+}
+
+
+:root {
+    --primary-color: #f7f7f7;
+    --blue: #68c7c1;
+    --yellow: #faca78;
+    --orange: #f57f5b;
+    --red: #dd5341;
+    --brown: #794a3a;
+    --primary-font-family: highlightFont;
+    --second-font-family: "Anton", sans-serif;
+    --third-font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: var(--third-font-family);
+    color: var(--brown);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.container .nav-bar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 5%;
+    background-color: var(--yellow);
+}
+
+.container .nav-bar .nav-bar-logo {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.container .nav-bar .nav-bar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 18px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.container .nav-bar .nav-bar-links a {
+    margin-right: 40px;
+    padding: 2px 5px;
+    border: 2px solid transparent;
+    /* font-family: var(--primary-font-family); */
+}
+
+.container .nav-bar .nav-bar-links a:hover {
+    color: var(--red);
+}
+
+.container .nav-bar .nav-bar-account-box {
+    display: flex;
+    height: 34px;
+    cursor: pointer;
+    position: relative;
+    object-fit: fill;
+}
+
+.container .nav-bar .nav-bar-account-box img {
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+}
+
+.container .nav-bar .nav-bar-account-box-action {
+    position: absolute;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: -170px;
+    display: none;
+    background-color: var(--red);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    gap: 5px;
+}
+
+.container .nav-bar .nav-bar-account-box-action.active {
+    display: flex;
+}
+
+.container .nav-bar .nav-bar-account-box-action a {
+    width: 100%;
+}
+
+.container .nav-bar .nav-bar-account-box-action button {
+    cursor: pointer;
+    width: 100%;
+    padding: 5%;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: var(--yellow);
+}
+.container .nav-bar .nav-bar-account-box-action button:hover{
+    opacity: 0.8;
+}
+
+.container .hero {
+    display: flex;
+    padding: 2% 5%;
+    height: 100vh;
+}
+
+.container .hero .hero-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-right: 5%;
+}
+
+.container .hero .hero-left p {
+    font-family: var(--third-font-family);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .hero .hero-left p:first-child {
+    font-weight: 900;
+    font-size: 40px;
+    font-family: var(--second-font-family);
+}
+
+.container .hero .hero-left b {
+    color: var(--blue);
+    font-size: 55px;
+}
+
+.container .hero .hero-left button {
+    padding: 2% 5%;
+    border-radius: 5px;
+    background-color: var(--red);
+    color: var(--yellow);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    margin-top: 30px;
+}
+
+.container .hero .hero-left button:hover {
+    transform: scale(1.05);
+}
